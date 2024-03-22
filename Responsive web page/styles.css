@@ -1,0 +1,470 @@
+:root {
+    /*navigace*/
+    --background-color: #33292a;
+    --text-color: #fff;
+    /*pozadí*/
+    --background-color-1: #33292a;
+    --background-color-2: #644b4f;
+    --background-color-3: #333333;
+    --background-color-4: #f2f2f2;
+    /*odkaz*/
+    --anchor-color: #efa69d;
+    --anchor-hover: #e9877b;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NAVIGATION*/
+.navigation {
+    background-color: var(--background-color);
+    position: sticky;
+    top:0;
+    height: 70px;
+    width: 100%;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navigation li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ /*ICON MENU*/
+.icon-menu {
+    display: none;
+    height: 70px;
+    padding: 1rem;
+}
+
+.icon-menu img{
+    width: 60px;
+    height: 30px;
+}
+
+@media only screen and (max-width:768px){
+    .icon-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navigation ul{
+        display: none;
+    }
+}
+
+/*HERO SECTION*/
+.hero-section {
+    height: calc(100% - 70px);
+    background-image: url("./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-text {
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+}
+
+@media only screen and (max-width:768px){
+    .hero-text{
+        font-size: 30px;
+        right: 10%;
+    }
+}
+
+/*ABOUT US SECTION*/
+.about-us-section {
+    display: flex;
+    gap: 4rem;
+    width: 70%;
+    margin: 8rem auto;
+}
+
+.about-us-heading {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.about-us-text {
+    width: calc(100% / 2 - 4rem / 2);
+}
+
+.about-us-paragraph{
+    font-size: 22px;
+}
+
+.about-us-image-wrapper {
+    background-image: url("./images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: calc(100% / 2 - 4rem / 2);
+    border-radius: 5px;
+    align-items: stretch;
+}
+
+@media only screen and (max-width:768px){
+    .about-us-section{
+        flex-direction: column;
+        width:80%
+    }
+    .about-us-text{
+        width: 100%;
+    }
+    .about-us-image-wrapper{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+/*WHAT WE DO SECTION*/
+.what-we-do-section {
+    background-color: var(--background-color-1);
+    color: var(--text-color);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 800px
+}
+
+.what-we-do-container {
+    width: 70%;
+}
+
+.what-we-do-container p {
+    font-size: 22px;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.what-we-do-container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.what-we-do-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-we-do-icons h3 {
+    text-align: center;
+    padding: 12px;
+}
+
+@media only screen and (max-width:768px){
+    .what-we-do-section{
+        height:1600px;
+    }
+    .what-we-do-container{
+        width: 80%;
+    }
+    .what-we-do-icons{
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+        height: 700px;
+    }
+}
+
+/*OUR TRIPS SECTION*/
+.photo-1 {
+    background-image: url("./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-2 {
+    background-image: url("./images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-3 {
+    background-image: url("./images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-4 {
+    background-image: url("./images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-5 {
+    background-image: url("./images/matej-drha-rbDzMcJsBkY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-6 {
+    background-image: url("./images/patrick-szylar-45bM3XGqnDE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-7 {
+    background-image: url("./images/simon-english-48nerZQCHgo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-8 {
+    background-image: url("./images/julian-bialowas-ilkTnuMunP8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.our-trips-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 70%;
+    margin: 8rem auto;
+}
+
+.our-trips-text {
+    width: calc(100% / 3 - 2rem / 3);
+    background-color: var(--background-color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.gallery {
+    width: calc(100% / 3 - 2rem / 3);
+    height: 250px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:768px){
+    .our-trips-section {
+        flex-direction: column;
+        width: 80%;
+    }
+    .gallery{
+        width:100%;
+    }
+    .our-trips-text{
+        height: 100px;
+        width: 100%;
+    }
+}
+
+
+/*WHERE TO GO SECTION*/
+.where-to-go-section {
+    color: var(--text-color);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-2);
+}
+
+.where-to-go-container {
+    width: 70%;
+    display: flex;
+    gap: 5rem;
+}
+
+.where-to-go-paragraph {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.where-to-go-text{
+    display:flex;
+    gap: 5rem;
+    flex-direction: column;
+    flex: 3;
+}
+
+.where-to-go-contact-us a {
+    padding: 1rem;
+    border: solid 1px #000000;
+    color: #000000;
+    background-color: var(--background-color-4);
+    width: fit-content;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.where-to-go-heading {
+    font-size: 30px;
+    flex: 1;
+}
+
+@media only screen and (max-width:768px){
+    .where-to-go-container{
+        flex-direction: column;
+        width: 80%
+    }
+    .where-to-go-section{
+        height: 800px;
+        
+    }
+}
+
+/*REVIEWS SECTION*/
+.review-1,
+.review-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.review-1 img,
+.review-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-1-image-wrapper,
+.review-2-image-wrapper {
+    width: 100px;
+    height: 100px;
+}
+
+.reviews-section {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    margin: 8rem auto;
+}
+
+.reviews-section p {
+    font-size: 22px;
+    text-align: center;
+    flex-basis: calc(100% / 2 - 8rem / 2)
+}
+
+.reviews-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 40%;
+}
+
+.reviews-section-reviews {
+    display: flex;
+    gap: 8rem;
+}
+
+.reviews-section-text h2 {
+    font-size: 40px;
+}
+
+@media only screen and (max-width:768px){
+    .reviews-section{
+        width: 80%
+    }
+    .reviews-section-reviews{
+        flex-direction: column;
+    }
+    .reviews-section-text, .review-1, .review-2{
+        width:100%
+    }
+}
+
+/*PHOTO SECTION*/
+.photo-section-photo-1 {
+    background-image: url("./images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-section-photo-2 {
+    background-image: url("./images/omer-salom-LoijtQXXNhs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-section-photo-3 {
+    background-image: url("./images/daniel-tseng-73lmMKhi2U8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-section-photo-4 {
+    background-image: url("./images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-section-gallery {
+    height: 50vh;
+    flex-basis: calc(100%/2)
+}
+
+.photo-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:768px){
+    .photo-section-gallery {
+        flex-basis: 100%;
+        height:300px;
+    }
+}
+
+
+/*FOOTER*/
+.footer {
+    background-color: var(--background-color-3);
+    line-height: 40px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer a {
+    color: var(--anchor-color);
+}
+
+.footer a:hover {
+    color: var(--anchor-hover);
+}
